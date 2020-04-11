@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <v-row>
+  <div>
+    <v-row v-if="user">
       <v-col cols="12" class="text-center mt-5">
         <p class="display-2">Taskboards</p>
       </v-col>
@@ -23,7 +23,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row v-if="user">
       <v-col>
         <v-btn text class="text--disabled ma-5 text-capitalize" @click="add">+ add board</v-btn>
       </v-col>
@@ -51,7 +51,9 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </v-container>
+
+    <BrosjSkeleton />
+  </div>
 </template>
 
 <script>
