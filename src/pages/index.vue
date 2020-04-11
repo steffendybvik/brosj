@@ -52,7 +52,7 @@
       </v-card>
     </v-dialog>
 
-    <BrosjSkeleton />
+    <BrosjSkeleton v-if="!user" />
   </div>
 </template>
 

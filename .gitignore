@@ -25,6 +25,7 @@ yarn-error.log*
 .firebaserc
 firestore.indexes.json
 firestore.rules
+/src/services/init-firebase.js
 
 # txt
 noteToSelf.txt
